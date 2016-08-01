@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:gravity="center"
+              tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".5"
+        android:orientation="vertical" >
+        <FrameLayout
+            android:id="@+id/image_output"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+        </FrameLayout>
+
+        <!-- <ImageView
+            android:id="@+id/dec_image"
+            android:contentDescription="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/preview_holder"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
